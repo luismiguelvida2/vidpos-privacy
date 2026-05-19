@@ -402,20 +402,24 @@
         <div class="perm-desc">Para seleccionar imágenes existentes del dispositivo como fotos de productos.</div>
       </div>
       <div class="perm-card">
-        <div class="perm-name">🔵 Bluetooth</div>
-        <div class="perm-desc">Para conectarse a impresoras térmicas y generar tickets de venta físicos.</div>
-      </div>
-      <div class="perm-card">
-        <div class="perm-name">📍 Ubicación (aproximada y precisa)</div>
-        <div class="perm-desc">Requerido por Android para la búsqueda de dispositivos Bluetooth cercanos. <strong>No almacenamos ni compartimos datos de ubicación en ningún momento.</strong></div>
+        <div class="perm-name">🖨️ Red local (Wi-Fi / IP)</div>
+        <div class="perm-desc">Para conectarse a impresoras térmicas en la misma red local y generar tickets de venta físicos vía dirección IP.</div>
       </div>
       <div class="perm-card">
         <div class="perm-name">🌐 Internet</div>
         <div class="perm-desc">Para la sincronización de datos con la nube (Supabase) y futuras actualizaciones de contenido.</div>
       </div>
+      <div class="perm-card" style="border-color:#fbbf24; background:#fffbeb;">
+        <div class="perm-name" style="color:#92400e;">🔵 Bluetooth <span style="font-size:11px;font-weight:400;color:#b45309;">(funcionalidad futura)</span></div>
+        <div class="perm-desc">Reservado para una próxima funcionalidad de impresión de tickets en impresoras térmicas Bluetooth. Actualmente este permiso no está activo en la aplicación.</div>
+      </div>
+      <div class="perm-card" style="border-color:#fbbf24; background:#fffbeb;">
+        <div class="perm-name" style="color:#92400e;">📍 Ubicación <span style="font-size:11px;font-weight:400;color:#b45309;">(funcionalidad futura)</span></div>
+        <div class="perm-desc">Requerido por Android para el escaneo de dispositivos Bluetooth cercanos. Se activará junto con la funcionalidad Bluetooth. VidPos no registra, almacena ni transmite datos de ubicación en ningún momento.</div>
+      </div>
     </div>
     <div class="warn">
-      El permiso de ubicación se solicita exclusivamente como requisito técnico del sistema operativo Android para el escaneo de dispositivos Bluetooth. VidPos no registra, almacena, procesa ni transmite coordenadas de ubicación en ninguna circunstancia.
+      Los permisos de Bluetooth y Ubicación están declarados para una funcionalidad futura de impresión inalámbrica. Actualmente no están activos. La impresión de tickets se realiza mediante conexión directa por IP en la red local (Wi-Fi).
     </div>
   </section>
 
@@ -428,7 +432,7 @@
         <ul>
           <li>Gestionar el punto de venta: inventario, ventas, clientes y empleados del negocio.</li>
           <li>Identificar productos mediante escaneo de códigos de barras o QR.</li>
-          <li>Imprimir tickets de venta a través de impresoras Bluetooth.</li>
+          <li>Imprimir tickets de venta en impresoras térmicas conectadas a la red local (Wi-Fi / IP).</li>
           <li>Respaldar y sincronizar los datos del negocio en la nube para acceso multi-dispositivo.</li>
         </ul>
       </li>
